@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Queue-React-App/static/css/main.1398b715.css",
+    "main.js": "/Queue-React-App/static/js/main.9b239b64.js",
+    "index.html": "/Queue-React-App/index.html",
+    "main.1398b715.css.map": "/Queue-React-App/static/css/main.1398b715.css.map",
+    "main.9b239b64.js.map": "/Queue-React-App/static/js/main.9b239b64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1398b715.css",
+    "static/js/main.9b239b64.js"
+  ]
+}
