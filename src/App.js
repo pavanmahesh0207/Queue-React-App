@@ -43,7 +43,7 @@ const App = () => {
 
   // Function to show whether the queue is full in an alert
   const showIsFull = () => {
-    alert(`IsFull: ${queue.length === maxEntry}`)
+    alert(`IsFull: ${queue.length === parseInt(maxEntry)}`)
   }
 
   // Function to clear the queue
