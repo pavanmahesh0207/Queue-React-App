@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+#  Queue React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application that demonstrates the functionalities of a queue. It allows you to enqueue and dequeue numbers, display the front element, check if the queue is empty or full, and clear the entire queue.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Input box to set the maximum number of entries in the queue.
+- Enqueue button to add a new number to the queue.
+  - The button is disabled when the queue reaches the maximum entry limit.
+- Dequeue button to remove the first number from the queue.
+  - The button is disabled when the queue is empty.
+- Front button to show the first number in an alert.
+  - The button is disabled when the queue is empty.
+- IsEmpty button to show whether the queue is empty in an alert.
+- IsFull button to show whether the queue is full in an alert.
+- Clear all button to reset the queue.
 
-### `npm start`
+## Demo link
+Access my site at [queue-react-app](https://pavanmahesh0207.github.io/Queue-React-App)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Approach
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I have developed this application using React. The application follows a component-based architecture and leverages React's state management capabilities to handle the queue and its operations.
 
-### `npm test`
+The main components in the application are:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `App`: The root component that encapsulates the entire application.
+- `InputBox`: Renders the input box for setting the maximum number of entries in the queue.
+- `QueueButtons`: Contains the buttons for enqueue, dequeue, front, isEmpty, isFull, and clear all operations.
+- `QueueDisplay`: Renders the queue numbers and displays them on the UI.
+- `QueueItem`: Represents an individual number in the queue.
 
-### `npm run build`
+The application state is managed using the `useState` hook. The `maxEntry` state variable holds the maximum number of entries allowed in the queue, while the `queue` state variable keeps track of the numbers in the queue.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The `enqueue`, `dequeue`, `showFront`, `showIsEmpty`, `showIsFull`, and `clearAll` functions handle the respective operations and update the state accordingly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The UI is built using HTML and CSS. The application layout is structured using HTML tags, and CSS styles are applied to achieve the desired visual appearance.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application provides instant feedback to the user through disabled buttons when certain conditions are met, such as reaching the maximum entry limit or an empty queue.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Navigate to the project directory
+```bash
+cd queue-react-app
+```
+2. Install the dependencies
+```bash
+npm install
+npm start
+```
+3. Start the development server
+```bash
+npm start
+```
+ This will open the application in your default browser. If it 
+  doesn't, you can manually open [http://localhost:3000]() in your 
+  browser.
 
-## Learn More
+4. Use the application by setting the max entry, enqueuing or 
+   dequeuing numbers, and interacting with the different buttons.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
+1. React
+2. HTML
+3. CSS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
