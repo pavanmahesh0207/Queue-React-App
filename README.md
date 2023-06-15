@@ -50,7 +50,6 @@ cd queue-react-app
 2. Install the dependencies
 ```bash
 npm install
-npm start
 ```
 3. Start the development server
 ```bash
